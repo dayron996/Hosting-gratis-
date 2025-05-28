@@ -1,0 +1,197 @@
+/* Tipografía principal */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f9fafb 0%, #e2eafc 100%);
+  color: #232946;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(100deg, #232946 50%, #eebbc3 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.6em;
+  margin: 0 0 16px 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1em;
+  margin-bottom: 32px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #232946;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 4px 20px rgba(43,42,62,0.08);
+}
+.cta-btn:hover {
+  background: #eebbc3;
+  color: #232946;
+}
+
+/* GENERAL CONTAINERS */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 32px 0;
+}
+
+/* VENTAJAS */
+#ventajas h2, #planes h2, #signup h2 {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 2em;
+}
+
+.ventajas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.ventaja-item {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(43,42,62,0.07);
+  padding: 28px 22px;
+  text-align: center;
+  width: 250px;
+}
+
+.ventaja-item .emoji {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* PLANES */
+.planes-grid {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.plan-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(43,42,62,0.10);
+  width: 300px;
+  padding: 32px 22px;
+  text-align: center;
+  transition: transform 0.2s;
+  margin-bottom: 15px;
+}
+.plan-card.destacado {
+  border: 2px solid #eebbc3;
+  transform: scale(1.03);
+}
+.plan-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 7px;
+}
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  color: #454b5e;
+  margin: 16px 0;
+}
+.plan-card li {
+  margin: 6px 0;
+}
+.plan-btn {
+  background: #eebbc3;
+  color: #232946;
+  padding: 10px 25px;
+  border-radius: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.plan-btn:hover {
+  background: #ffd6e0;
+}
+
+/* FORMULARIO */
+#signup form {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  padding: 36px 28px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(43,42,62,0.07);
+}
+
+#signup input[type="text"], #signup input[type="email"] {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccccdc;
+  font-size: 1em;
+}
+#signup button {
+  background: #232946;
+  color: #fff;
+  border: none;
+  padding: 11px 0;
+  border-radius: 24px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#signup button:hover {
+  background: #eebbc3;
+  color: #232946;
+}
+#respuesta-formulario {
+  font-size: 1em;
+  color: #41b883;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #232946;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 10px 0;
+  font-size: 1em;
+  border-radius: 16px 16px 0 0;
+}
+
+@media (max-width: 1000px) {
+  .ventajas-list, .planes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 32px 0 18px 0;
+  }
+  .container {
+    padding: 18px 0;
+  }
+  #signup form {
+    padding: 22px 12px;
+  }
+}
+
